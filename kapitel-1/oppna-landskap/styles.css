@@ -1,0 +1,59 @@
+
+
+body{
+    background-image: url('./bilder/image-24.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    font-family: "Kanit", sans-serif;
+}
+
+.mingzat-regular {
+    font-family: "Mingzat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+h1{
+    font: 70px;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 black;
+    margin-left: 100px;
+    
+}
+
+h2{
+    font: 30px;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 black;
+    margin-left: 100px;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+   
+    color: white;
+    font-style: italic;
+    margin-left: 100px;
+    padding: 30px;
+    text-shadow: 1px 1px 0 black;
+    background-color: #13447ca8;
+    border: 3px solid #15467ecf;
+    width: 550px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    margin-bottom: 50px;
+}
+
+img{
+    width: 100px;
+    margin-left: 100px;
+
+}
