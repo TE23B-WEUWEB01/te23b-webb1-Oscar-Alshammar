@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/originals/72/6f/57/726f57f1d99f16ab0d850ac1d10fb66c.gif");
+    user-select: none;
+}
+
+.info{
+    font-size: 12px;
+}
+
+table{
+    width: 1000px;
+    background: #eeeeee1b;
+    border-spacing: 10px;
+    table-layout: fixed;
+    margin: 20px auto;
+    border-radius: 1px;
+}
+
+caption {   
+    font-family: serif;
+    font-size: 50px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/020/658/non_2x/abstract-technology-futuristic-concept-geometric-pattern-vibrant-color-background-vector.jpg');
+    background-size: cover;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 500px;
+}
+th {
+    font-family: sans-serif;
+    font-size: 20px;
+    background: linear-gradient( #ff04d1, #4102ff8c);
+    padding: 10px;
+    transition: all 0.5s;
+}
+th:hover{
+    background: linear-gradient( #ff04d1, #4102ff8c);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+
+td{
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #ffffff2f;
+    padding: 5px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+td.info:hover{
+    background: #ffffff2f;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+    background-color: #730ee6;
+    animation: test 0.5s;
+    scale: 1.3;
+}
+td:hover{
+    background: #ffffff2f;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+    background-color: #730ee6;
+    scale: 1.1;
+    
+}
+
+@keyframes test
+    {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+            scale: 1.3;
+        }
+    }
+@keyframes testOut
+    {
+        0%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+            scale: 1.3;
+        }
+    }
+
+img{
+    width: 150px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+    border: 1px solid #730ee6;
+    border-radius: 100%;
+}
