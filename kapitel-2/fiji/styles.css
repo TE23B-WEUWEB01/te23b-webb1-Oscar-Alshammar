@@ -1,0 +1,96 @@
+
+body {
+    background: url('./bilder/rarotonga2_070722.webp') no-repeat fixed;
+    user-select: none;
+}
+h1 {
+    font: 120px "roboto", sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px magenta;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+h2 {
+    font: 80px "roboto", sans-serif;
+    color: aliceblue;
+    margin-left: 150px;
+    text-shadow: 5px 5px 2px magenta;
+
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+
+}
+a {
+    font: 40px "roboto", sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: magenta;
+    border: 5px solid white;
+    border-radius: 15px;
+    transition: all 1s ease;
+    text-transform: uppercase;
+
+}
+a:hover {
+    background-color: white;
+    color: magenta;
+    border-radius: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in2 {
+    animation: slideIn2 2s ease-out;
+}
+
+@keyframes slideIn3 {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in3 {
+    animation: slideIn3 1s ease-out;
+}
