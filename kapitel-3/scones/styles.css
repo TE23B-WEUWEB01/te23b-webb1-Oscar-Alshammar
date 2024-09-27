@@ -1,0 +1,33 @@
+body{
+    background: url("./bilder/34347_665117529.jpg_200.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+div{
+    background: yellow;
+    width: 500px;
+    padding: 40px;
+    margin: 50px auto;
+    border: 10px solid black;
+    box-shadow: 5px 5px 20px black;
+    color: brown;
+    font-family: 'Comic Sans MS', cursive;
+    border-radius: 20px;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: circle;
+    padding-left: 20px;
+}

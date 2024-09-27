@@ -26,6 +26,12 @@ body {
     color: aqua;
     backdrop-filter: blur(10px);
     box-shadow: 12px 10px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transform: skewY(5deg);
 }
 
 .name {
