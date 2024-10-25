@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Teko:wght@300..700&display=swap');
+
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("https://science.nasa.gov/wp-content/uploads/2023/03/as11-40-5878-orig.jpg?w=1536&format=webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    font-family: monospace, serif;
+    background-color: #ffffff16;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 40px;
+    width: 800px;
+    padding: 50px;
+}
+
+h1{
+    font: 70px "Sixtyfour Convergence", cursive;
+    text-align: center;
+}
+
+.intro{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 1px white;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.vänster{
+    align-items: center;
+    flex-direction: row;
+}
+
+.vänster img {
+    margin-right: 20px;
+}
+
+.höger{
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.höger img {
+    margin-left: 20px;
+}
+
+.text{
+    font-family: 'Teko', monospace;
+    font-size: 20px;
+}
