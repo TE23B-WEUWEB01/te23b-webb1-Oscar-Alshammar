@@ -102,3 +102,21 @@ ul{
     justify-content: center;
     margin-bottom: 20px;
 }
+
+a{
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+@media (max-width: 575px) {
+    .card h1{
+        font-size: 3em;
+    }
+    .card p{
+        font-size: 1.5em;
+    }
+    ul{
+        font-size: 1.5em;
+    }
+
+}
