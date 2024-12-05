@@ -1,4 +1,3 @@
-
 html {
     box-sizing: border-box;
 }
@@ -8,6 +7,16 @@ html {
 body, h1, p, ul {
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 a {
@@ -35,10 +44,15 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title{
     margin-right: auto;
+    margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
 }
 
 ul{
@@ -53,6 +67,7 @@ li{
     border-radius: 20px;
     padding: 8px;
     transition: all 0.1s;
+    cursor: pointer;
 }
 
 li:active {
@@ -60,4 +75,57 @@ li:active {
     padding: 8px;
     border-radius: 20px;
     
+}
+
+li:hover {
+    background-color: var(--fire-engine-red);
+}
+
+.kontainer {
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kontainer img{
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.kontainer p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.kalender {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.kalender .lucka {
+    background-color: var(--aureolin);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.kalender .lucka:hover {
+    background-color: var(--fire-engine-red);
+    transform: scale(1.1);
+}
+
+.active {
+    background-color: blue;
 }
