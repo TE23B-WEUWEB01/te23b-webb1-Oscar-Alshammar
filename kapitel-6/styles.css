@@ -1,0 +1,109 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: url('bilder/bg.svg');
+}
+
+.kontainer{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    height: 900px;
+    background-color: #f8f8f8;
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.375;
+}
+
+p{
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.boxar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    user-select: none;
+}
+
+.box{
+    background-color: #fff;
+    border-radius: 0.5em;
+    text-align: left;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.box h3 {
+    margin: 1em;
+}
+
+.box p{
+    color: #666;
+    margin: 1em;
+    text-align: left;
+}
+
+.box a{
+    color: #065299;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box:hover {
+    box-shadow: 0 0 15px rgb(82, 82, 82);
+}
+
+.box:hover h3,
+.box:hover a {
+    text-decoration: underline;
+}
+
+.button{
+    font-weight: 700;
+    margin: auto;
+    background-color: #1955ae;
+    color: white;
+    border-radius: 999px;
+    font-size: 1.2em; /* Reduced from 1.8em */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
