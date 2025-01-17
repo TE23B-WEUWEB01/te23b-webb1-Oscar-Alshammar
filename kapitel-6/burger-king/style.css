@@ -21,11 +21,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Sidlayout */
 body{}
 
-.container{}
+.container{
+    width: 1200px;
+    margin: auto;
+    font-family: 'Modak', serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* Sidhuvud */
 .header{
-
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 .header .menu{
 
@@ -34,14 +42,26 @@ body{}
 
 }
 .header .offers{
-
+    text-decoration: none;
+    color: #CC2200;
+    border: 2px solid;
+    border-radius: 5px #CC2200;
+    padding: 10px;
 }
 
 /* Sidinnehåll */
 .content {}
 .content h2 {}
-.content .col-3 {}
-.content .col-3 .burger {}
+.content .col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.content .col-3 .burger {
+    background-color: #CC2200;
+    border-radius: 10px;
+    text-align: center;
+
+}
 .content .col-3 .burger img {}
 .content .col-3 .burger p {}
 
