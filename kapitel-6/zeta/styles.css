@@ -1,0 +1,70 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+    background-image: url('./bilder/bakgrund.jpg');
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+img{
+    width: 80%;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+.container nav {
+    text-align: center;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container nav img {
+    width: 200px;
+}
+.container nav a {
+    color: white; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.container .sida {
+    background-color: white;
+    padding: 20px;
+}
+
+.container .produkter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container .produkt{
+    background-color: aquamarine;
+    text-align: center;
+    padding-bottom: 40px;
+    
+
+}
+
+.container .produkt img {
+    width: 100%;
+}
