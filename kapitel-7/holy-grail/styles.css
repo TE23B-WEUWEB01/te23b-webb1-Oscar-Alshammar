@@ -1,0 +1,56 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+   width: 100%;
+}
+
+
+.kontainer {
+    grid-template-columns: 1fr 2fr 1fr;
+    display: grid;
+    width: 1500px;
+    margin: auto;
+    grid-template-areas: 
+    "sidhuvud sidhuvud sidhuvud"
+    "meny artiklar sidebar"
+    "sidfoot sidfoot sidfoot"
+    ;
+}
+
+header {
+    background-color: yellow;
+    grid-area: sidhuvud;
+    min-height: 10vh;
+}
+
+aside{
+    background-color: brown;
+    grid-area: sidebar;
+
+}
+nav{
+    background-color: black;
+    grid-area: meny;
+    color: aqua;
+    min-height: 80vh;
+}
+
+main{
+    background-color: aqua;
+    grid-area: artiklar;
+}
+
+footer{
+    background-color: blue;
+    grid-area: sidfoot;
+    min-height: 10vh;
+}

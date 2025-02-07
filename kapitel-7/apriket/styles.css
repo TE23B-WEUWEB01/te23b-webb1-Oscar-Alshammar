@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -10,44 +12,75 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 img {
-   width: 100%;
+    width: 100%;
+}
+
+/* Sidan */
+body {
+    background-image: url(./djungle.jpg);
+}
+.kontainer {
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Bygga layouten */
+.kontainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "sidhuvud sidhuvud"
+    "artiklarna sidebar"
+    "sidfot sidfot";
+}
+header {
+    grid-area: sidhuvud;
+    background-color: rosybrown;
+}
+main {
+    grid-area: artiklarna;
+    background-color: yellowgreen;
+}
+aside {
+    grid-area: sidebar;
+    background-color: magenta;
+}
+footer {
+    grid-area: sidfot;
+    background-color: lightslategray;
 }
 
 /* Sidhuvud */
 header {
-
+    color: #FFF;
+    font-family: "Rubik Moonrocks", serif;
 }
 header h1 {
-
+    font-size: 80px;
 }
-header h2 {
+header h2 {}
 
-}
-
-
-/* Meny */
+/* Menyn */
 header nav {}
 header nav a {}
-header nav a.aktiv{}
+header nav a.aktiv {} 
 header nav a:hover {}
 
-/* Innehåll */
-
+/* Sidans innehåll - artiklar, text mm */
 main {}
-main p {}
-main h3 {}
-main figure {}
-main figure img {}
-main figure figcaption  {}
+main article {}
+main article h3 {}
+main article figure {}
+main article figure img {}
+main article figure figcaption {}
+main article p {}
 
-
-/* sidobar */
+/* Sidobar */
 aside {}
 aside h4 {}
 aside p {}
 
-/* Footer */
-
+/* Sidfoten */
 footer {}
 footer p {}
-
