@@ -20,35 +20,72 @@ body {
     background-image: url(./djungle.jpg);
 }
 .kontainer {
-    width: 1000px;
-    margin: auto;
-    padding: 20px;
 }
 
 /* Bygga layouten */
-.kontainer {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-    "sidhuvud sidhuvud"
-    "artiklarna sidebar"
-    "sidfot sidfot";
+/* För mobil < 576px  */
+@media (min-width: 576px) {
+    .kontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "sidhuvud "
+        "artiklarna"
+        "sidebar"
+        "sidfot ";
+        gap: 20px;
+    }
 }
+/* För läsplatta < 768px  */
+@media (min-width: 768px) {
+    .kontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "sidhuvud sidhuvud"
+        "artiklarna sidebar"
+        "sidfot sidfot";
+        gap: 20px;
+    }
+}
+/* För desktop >= 1200px */
+@media (min-width: 1200px) {
+    .kontainer {
+        width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "sidhuvud sidhuvud"
+        "artiklarna sidebar"
+        "sidfot sidfot";
+        gap: 20px;
+    }
+}
+
 header {
     grid-area: sidhuvud;
-    background-color: rosybrown;
 }
 main {
     grid-area: artiklarna;
-    background-color: yellowgreen;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
 }
 aside {
     grid-area: sidebar;
-    background-color: magenta;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
 }
 footer {
     grid-area: sidfot;
-    background-color: lightslategray;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /* Sidhuvud */
@@ -62,16 +99,38 @@ header h1 {
 header h2 {}
 
 /* Menyn */
-header nav {}
-header nav a {}
-header nav a.aktiv {} 
-header nav a:hover {}
+header nav {
+    background: rgb(142,199,1);
+    background: linear-gradient(0deg, rgba(142,199,1,1) 0%, rgba(44,129,14,1) 42%, rgba(11,106,18,1) 60%, rgba(112,201,0,1) 100%);
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+header nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+header nav a.aktiv {
+    background: rgb(128,180,1);
+    background: linear-gradient(0deg, rgba(128,180,1,1) 0%, rgba(116,207,84,1) 42%, rgba(92,204,100,1) 60%, rgba(97,173,1,1) 100%);
+} 
+header nav a:hover {
+    background: rgb(128,180,1);
+    background: linear-gradient(0deg, rgba(128,180,1,1) 0%, rgba(116,207,84,1) 42%, rgba(92,204,100,1) 60%, rgba(97,173,1,1) 100%);
+}
 
 /* Sidans innehåll - artiklar, text mm */
 main {}
 main article {}
 main article h3 {}
-main article figure {}
+main article figure {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #AAA;
+    margin-bottom: 20px;
+}
 main article figure img {}
 main article figure figcaption {}
 main article p {}
