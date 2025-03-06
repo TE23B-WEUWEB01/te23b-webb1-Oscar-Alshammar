@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.mars main,
+.mars footer {
+    background: #E4B395;
+}
+
+.titan main,
+.titan footer {
+    background: #B9C3F1;
+}
+
+.ceres main,
+.ceres footer {
+    background: #B2D4E0;
+}
+
+.wanderer {
+    background: #000;
+}
+
+.wanderer .vimeo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.wanderer .vimeo iframe {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 230vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+
+}
