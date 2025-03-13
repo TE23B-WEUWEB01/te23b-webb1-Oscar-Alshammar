@@ -75,10 +75,6 @@ header li a {
     color: royalblue;
 }
 
-.container header nav a {
-    font-weight: bold;
-}
-
 .container header nav a:hover {
     text-decoration: underline;
 }
