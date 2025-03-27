@@ -1,0 +1,31 @@
+
+
+.kontainer {
+    width: 700px;
+    margin: auto ;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+}
+
+.kontainer button{
+    background-color: blue;
+    border-color: red;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.item {
+    text-decoration: underline;
+    border: 10px solid;
+    width: 100%;
+        
+}
+
+
+
+.list {
+    width: 700px;
+    margin: auto;
+}
