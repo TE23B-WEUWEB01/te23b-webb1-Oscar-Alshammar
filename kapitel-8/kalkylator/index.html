@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkylator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>kalkylator</h1>
+        <div class="kolumn-2">
+            <label>Tal 1</label><input id="tal1" type="number">
+            <label>Tal 2</label><input id="tal2" type="number">
+        </div>
+        <button onclick="kalkylator('+')">+</button><button onclick="kalkylator('-')">-</button><button onclick="kalkylator('/')">/</button><button onclick="kalkylator('*')">*</button>
+        <div class="kolumn-2">
+            <label>Svar: </label><input id="svar" type="text" readonly>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
